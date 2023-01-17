@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible"
+content="IE=edge">
+  <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+  <title>Functions Practice Assignment</title>   
+</head>
+<body>
+  <div>Assignment-1 (Functions). Check Console For Ouput</div>
+  <!--Q1. Add three Numbers from variables in console. -->
+  <script>
+  function AddThreeNumbers(x=0, y=0, z=0){
+    add = x+y+z;
+    return add;
+  }
+  console.log(AddThreeNumbers(10,6,20));
+  //_____________________________________________________________________________
+//   Q2. Check Mean Of Three Numbers.
+  function Mean(a=0,b=0,c=0){
+    add = a+b+c;
+    mean = add/3;
+    return mean;
+  }
+  console.log(Mean(20,5,11));
+  //______________________________________________________________
+  //Q3. Calculate Year from Age?
+   function calculateBirthYear(age) {
+    let currentYear = new Date().getFullYear();
+    let birthYear = currentYear- age;
+    console.log(birthYear);
+   }
+   calculateBirthYear(26);
+   //___________________________________________________________________
+   //Q4. Calculate Area of Rectangle, Square, Circle?
+   function AreaOf_Rectangle_Square_Circle(a=0,b=0,r=0){
+    const pi = 22/7;
+    areaOfRectangle = a * b;
+    console.log("Area of Rectangle is :" +areaOfRectangle);
+    areaOfSquare = a * a;
+    console.log("Area Of Square is: "+areaOfSquare);
+    areaOfCircle = pi * r * r;
+    console.log("Area of Circle is: " +areaOfCircle);
+   }
+   AreaOf_Rectangle_Square_Circle(6,4,7);
+   //___________________________________________________________
+   //Q5. Check Perimeter Of Rectangle and Square?
+   function PerimeterOf_Rectangle_Square(a=0,b=0){
+    perimeterOf_Rectangle = 2 * (a+b);
+    console.log("Perimeter Of Rectangle is : "+perimeterOf_Rectangle);
+    perimeterOf_Square = 4*a;
+    console.log("Perimeter Of Square is: "+perimeterOf_Square);
+   } 
+   PerimeterOf_Rectangle_Square(6,4);
+   //_____________________________________________________________
+   //Q6. Calculate BMI of user using Weight and Height?
+   function CalculateBMI(weight,height) {
+    const bmi = weight / (height * height);
+    console.log(`BMI of Person whose weight is ${weight}kgs and height ${height}meters is ${bmi.toFixed(2)}kg/m2`);
+   }
+   CalculateBMI(78,1.77);
+   //__________________________________________________________________
+   //Q7. Convert Temperature from Fahrenheit to Celsius.
+   function Fahrenheit_To_Celsius(fahrenheit) {
+    const Celsius = (fahrenheit - 32) * (5/9);
+    console.log(`${fahrenheit}degree fahrenheit = ${Celsius.toFixed(2)}degree celsius`);
+   }
+   Fahrenheit_To_Celsius(91);
+   //___________________________________________________________________________
+   //Q8.Convert Miles to Kms.
+   function miles_To_Kms(miles) {
+    let kms = (miles * 1.609).toFixed(2);
+    console.log(`${miles}miles = ${kms}kms`);
+    
+   }
+   miles_To_Kms(10);
+  </script>
+</body>
+</html>
